@@ -7,8 +7,21 @@ color rojo: #fa573a
 color azul: #21242e
  */
 
-p {
-    color: #555;
+.go-up-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    padding: 0.6em 0.8em;
+    background: linear-gradient(45deg, #e22504, #ff6246);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.go-up-button:hover i {
+    transition: 0.5s;
+    transform: translateY(-2px);
 }
 
 .container {
@@ -23,6 +36,10 @@ p {
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -121,6 +138,96 @@ header nav .menu li a:hover {
     color: #fa573a;
 }
 
+main h2 {
+    font-family: "Handlee", cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1.2em;
+}
+
+main h2 span {
+    color: #fa573a;
+}
+
+main .underline {
+    position: relative;
+    width: 4em;
+    margin: 4px auto 2.5em auto;
+    font-weight: bold;
+    color: #fa573a;
+    text-align: center;
+}
+
+main .underline hr {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 0;
+    border: none;
+    border-bottom: 2px solid #fa573a;
+}
+
+main .container {
+    max-width: ;
+    padding: 1em 1.2em;
+}
+
+main .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .posts article {
+    width: 47%;
+}
+
+main .posts article .image-wrapper {
+    position: relative;
+}
+
+main .posts article .image-wrapper > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fa573a;
+}
+
+main .posts article .image-wrapper > div span {
+    display: block;
+    padding: 0.45rem 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+main .posts-container {
+    padding: 0.5em;
+    padding-bottom: 1.6em;
+}
+
+main .posts article h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.7em 0;
+}
+
+main .posts article a {
+    color: #fa573a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .posts article i {
+    color: #fa573a;
+    display: inline-block;
+    margin-left: 0.4em;
+}
+
+main .posts article p {
+    margin: 0.8em 0;
+    color: #777;
+}
 
 footer {
     background-color: #21242e;
