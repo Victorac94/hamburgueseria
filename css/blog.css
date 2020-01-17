@@ -212,6 +212,11 @@ main .posts article h3 {
     margin: 0.7em 0;
 }
 
+main .posts article .order-now:hover i {
+    transition: 0.5s;
+    transform: translateX(5px);
+}
+
 main .posts article a {
     color: #fa573a;
     text-decoration: none;
@@ -269,5 +274,22 @@ footer a {
 
     header nav .menu li {
         padding-right: 0;
+    }
+
+    main .posts article {
+        width: 31%;
+    }
+
+    main .posts-container {
+        padding: 0.5em 1em 1.6em 1em;
+    }
+
+    main .posts article h3 {
+        font-size: 1.2em;
+    }
+    
+    main .posts article a,
+    main .posts article p {
+        font-size: 0.9em;
     }
 }
