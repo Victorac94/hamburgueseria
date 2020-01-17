@@ -7,8 +7,21 @@ color rojo: #fa573a
 color azul: #21242e
  */
 
-p {
-    color: #555;
+.go-up-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    padding: 0.6em 0.8em;
+    background: linear-gradient(45deg, #e22504, #ff6246);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.go-up-button:hover i {
+    transition: 0.5s;
+    transform: translateY(-2px);
 }
 
 .container {
@@ -23,6 +36,10 @@ p {
 
 * {
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -121,6 +138,108 @@ header nav .menu li a:hover {
     color: #fa573a;
 }
 
+main {
+    background-color: #21242e;
+    color: white;
+}
+
+main .container {
+    width: 80%;
+}
+
+main h2 {
+    font-family: "Handlee", cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1.2em;
+}
+
+main h2 span {
+    color: #fa573a;
+}
+
+main .underline {
+    position: relative;
+    width: 4em;
+    margin: 4px auto 2.5em auto;
+    font-weight: bold;
+    color: #fa573a;
+    text-align: center;
+}
+
+main .underline hr {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 0;
+    border: none;
+    border-bottom: 2px solid #fa573a;
+}
+
+main .active {
+    border-radius: 4px;
+    background-color: #fa573a;
+}
+
+main .container ul {
+    margin-bottom: 2em;
+}
+
+main .container ul li {
+    padding: 0.8em 1em;
+    cursor: pointer;
+}
+
+main .container h3 {
+    font-weight: bold;
+}
+
+main .container h3 + hr {
+    width: 3em;
+    height: 0;
+    margin-left: 0;
+    border: none;
+    border-bottom: 2px solid #fa573a;
+}
+
+main .meals article {
+    margin-top: 2em;
+}
+
+main .meals article header {
+    margin: 1em 0;
+}
+
+main .meals article header h3 {
+    display: inline-block;
+}
+
+main .meals article header span {
+    display: inline-block;
+    font-weight: bold;
+    color: #fa573a;
+    padding: 0.5em;
+}
+
+main section p {
+    font-size: 0.9em;
+}
+
+main .meals .order-now {
+    color: #fa573a;
+    padding: 1.5em 0;
+}
+
+main .meals .order-now a {
+    font-size: 0.9em;
+    color: #fa573a;
+    text-decoration: none;
+}
+
+main .meals .order-now:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
 
 footer {
     background-color: #21242e;
@@ -162,5 +281,43 @@ footer a {
 
     header nav .menu li {
         padding-right: 0;
+    }
+
+    main .select-lunch-time {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    main .meals {
+        width: 69%;/* no encaja bien con 70% */
+        display: inline-block;
+        margin: 0;
+        padding-left: 10%;
+    }
+
+    main .meals article {
+        display: flex;
+    }
+
+    /* image wrapper */
+    main .meals article div:first-child {
+        width: 35%;
+        max-width: 180px;
+        margin-right: 15px;
+    }
+
+    main .meals article header {
+        margin: 0 0 1.5em 0;
+        display: flex;
+    }
+
+    main .meals article header span {
+        padding: 0;
+        padding-left: 6px;
+    }
+
+    footer {
+        padding: 2em 0;
     }
 }
