@@ -30,6 +30,29 @@ body {
     font-size: 1em;
 }
 
+.go-top-link {
+    position: fixed;
+    bottom: 3em;
+    right: 15px;
+    display: flex;
+    padding: 0.6em 0.7em;
+    background-color: #FA573A;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.go-top-link i {
+    font-size: 1.5em;
+    color: white;
+}
+
+.go-top-link:hover i {
+    transition: 0.5s;
+    transform: translateY(-3px);
+}
+
 /* row:after porque vamos a hacer flotaciones */
 .row:after {
     clear: both;
