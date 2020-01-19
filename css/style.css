@@ -7,6 +7,19 @@ color rojo: #fa573a
 color azul: #21242e
  */
 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+ body {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1em;
+ }
+
 p {
     color: #555;
 }
@@ -21,14 +34,6 @@ p {
     width: 100%;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-}
 
 .go-top-link {
     position: fixed;
